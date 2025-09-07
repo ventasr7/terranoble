@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terranoble - La Nobleza de la Tierra</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background-image: url('https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-2 flex justify-between items-center">
+            <a href="#" class="flex items-center">
+                <!-- Logo de la empresa -->
+                <img src="IMG_8264.PNG" alt="Logo de Terranoble" class="h-16 mr-3">
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#inicio" class="text-gray-600 hover:text-green-700 transition duration-300">Inicio</a>
+                <a href="#productos" class="text-gray-600 hover:text-green-700 transition duration-300">Productos</a>
+                <a href="#nosotros" class="text-gray-600 hover:text-green-700 transition duration-300">Sobre Nosotros</a>
+                <a href="#contacto" class="text-gray-600 hover:text-green-700 transition duration-300">Contacto</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#inicio" class="block py-2 px-4 text-sm text-gray-600 hover:bg-green-100">Inicio</a>
+            <a href="#productos" class="block py-2 px-4 text-sm text-gray-600 hover:bg-green-100">Productos</a>
+            <a href="#nosotros" class="block py-2 px-4 text-sm text-gray-600 hover:bg-green-100">Sobre Nosotros</a>
+            <a href="#contacto" class="block py-2 px-4 text-sm text-gray-600 hover:bg-green-100">Contacto</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="hero-bg text-white relative">
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="container mx-auto px-6 py-32 text-center relative z-10">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">La Nobleza de la Tierra, en cada Cosecha</h1>
+                <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Del campo a tu mesa. Productos frescos y de la más alta calidad, cultivados con pasión.</p>
+                <a href="#productos" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300">Ver Productos</a>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="productos" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Nuestros Productos Estrella</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- Product Card 1 -->
+                    <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                        <img src="platano verde.png" alt="Plátanos Verdes" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-2">Plátanos Verdes</h3>
+                            <p class="text-gray-600">Ideales para tostones, mangú y una variedad de platos. Cosechados en su punto perfecto.</p>
+                        </div>
+                    </div>
+                    <!-- Product Card 2 -->
+                    <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                        <img src="yuca (2).png" alt="Yuca Fresca" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-2">Yuca Fresca</h3>
+                            <p class="text-gray-600">Suave y deliciosa, perfecta para hervir, freír o como acompañamiento principal.</p>
+                        </div>
+                    </div>
+                    <!-- Product Card 3 -->
+                    <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                        <img src="agaucate.png" alt="Aguacates" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-2">Aguacates Cremosos</h3>
+                            <p class="text-gray-600">Nuestros aguacates son cremosos y llenos de sabor. El complemento ideal para tus comidas.</p>
+                        </div>
+                    </div>
+                    <!-- Product Card 4 -->
+                    <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                        <img src="mango.png" alt="Mangos Dulces" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-2">Mangos Dulces</h3>
+                            <p class="text-gray-600">Jugosos y dulces, nuestros mangos son la fruta tropical perfecta para disfrutar sola o en postres.</p>
+                        </div>
+                    </div>
+                    <!-- Product Card 5 -->
+                    <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                        <img src="Batata (Boniato).png" alt="Batata (Boniato)" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-2">Batata (Boniato)</h3>
+                            <p class="text-gray-600">Versátil y nutritiva, ideal para asar, hervir o para darle un toque dulce a tus platos salados.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="nosotros" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=2070&auto=format&fit=crop" alt="Hombre en un cultivo" class="rounded-lg shadow-2xl w-full">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Nuestra Historia</h2>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        En Terranoble, todo comienza en nuestro solar, una tierra fértil que hemos cuidado por generaciones. Somos una empresa familiar dedicada a la agricultura sostenible y al amor por lo que hacemos. 
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        Nuestro compromiso es simple: ofrecer productos frescos, naturales y de la mejor calidad, llevando la riqueza de nuestra tierra directamente a tu hogar. Cada plátano, cada yuca, cada fruto es un reflejo de nuestra dedicación.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contacto" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Ponte en Contacto</h2>
+                <div class="max-w-4xl mx-auto bg-gray-50 p-8 rounded-lg shadow-lg">
+                    <div class="flex flex-col md:flex-row gap-12">
+                        <div class="md:w-1/2">
+                            <h3 class="text-2xl font-bold mb-4">Envíanos un Mensaje</h3>
+                            <form id="contact-form">
+                                <div class="mb-4">
+                                    <label for="name" class="block text-gray-700 font-medium mb-2">Nombre</label>
+                                    <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="email" class="block text-gray-700 font-medium mb-2">Correo Electrónico</label>
+                                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="message" class="block text-gray-700 font-medium mb-2">Mensaje</label>
+                                    <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" required></textarea>
+                                </div>
+                                <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">Enviar Mensaje por WhatsApp</button>
+                            </form>
+                        </div>
+                        <div class="md:w-1/2">
+                            <h3 class="text-2xl font-bold mb-4">Información de Contacto</h3>
+                            <p class="text-gray-600 mb-4">
+                                ¿Tienes preguntas o quieres hacer un pedido grande? ¡Estamos aquí para ayudarte!
+                            </p>
+                            <div class="flex items-center mb-4">
+                               <svg class="w-6 h-6 text-green-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                                <span>Dirección de tu Finca, Ciudad, País</span>
+                            </div>
+                             <div class="flex items-center mb-4">
+                                <svg class="w-6 h-6 text-green-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                                <span>correo@tuempresa.com</span>
+                            </div>
+                             <div class="flex items-center">
+                                <svg class="w-6 h-6 text-green-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                                <span>+1 (829) 437-9911</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Terranoble. Todos los derechos reservados.</p>
+            <p class="text-sm text-gray-400 mt-2">Diseñado con ❤️ para los amantes del campo.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu on link click
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // WhatsApp form handler
+        const contactForm = document.getElementById('contact-form');
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const messageBody = document.getElementById('message').value;
+
+            const phoneNumber = '18294379911'; // Código de país + número sin espacios/símbolos
+
+            const message = `¡Hola Terranoble! 👋\n\nUn cliente quiere contactarlos:\n\n*Nombre:* ${name}\n*Correo:* ${email}\n\n*Mensaje:*\n${messageBody}`;
+
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+            // Abre el enlace de WhatsApp en una nueva pestaña
+            window.open(whatsappURL, '_blank');
+        });
+    </script>
+
+</body>
+</html>
+
